@@ -6,128 +6,160 @@
   <title>Indiqo Systems – Clear systems. Better business.</title>
 
   <meta name="description"
-        content="Indiqo Systems designs CRM and automation systems that work like part of your team. Clear systems. Better business." />
+        content="Indiqo Systems designs CRM and automation systems that bring clarity, improve responsiveness, and help businesses grow with confidence." />
 
-  styles.css
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Smooth scrolling -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
 
+<!-- Header -->
 <header class="header">
-  assets/logo-wordmark.svg
+  <img src="assets/logo-wordmark.svg" alt="Indiqo Systems" class="logo" />
 
   <nav>
-    #what>
-    #howHow it works</a>
-    #contactBook a call</a>
+    <a href="#what">What we do</a>
+    <a href="#approach">Our approach</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
+<!-- Hero -->
 <section class="hero">
   <h1>Clear systems.<br>Better business.</h1>
 
-  <p>
+  <p class="hero-copy">
     We design CRM and automation systems that work like part of your team —
-    so your hard work finally compounds.
+    so your hard work finally compounds instead of repeating.
   </p>
 
-  #contactBook a clarity call</a>
+  <p class="hero-cta">
+    <a href="#approach">Learn how it works</a>
+  </p>
 </section>
 
-<section id="what" class="section">
+<!-- What we help with -->
+<section id="what" class="section section-alt">
   <h2>What we help with</h2>
 
   <div class="grid">
     <div>
-      <h3>CRM that works for you</h3>
+      <h3>CRM that works for your business</h3>
       <p>
-        Designed around how your business actually runs — not rigid templates.
+        Designed around how you actually operate — not generic templates.
+        Your leads, customers and follow‑ups all live in one clear place.
       </p>
     </div>
 
     <div>
       <h3>Automation that removes busywork</h3>
       <p>
-        Follow‑ups, reminders, tracking and reporting handled automatically.
+        Enquiries, reminders and next steps handled automatically,
+        so nothing slips through the cracks and responses stay fast.
       </p>
     </div>
 
     <div>
       <h3>Clear, owned systems</h3>
       <p>
-        You understand it. Your team uses it. Nothing held together with hacks.
+        Systems your team understands and uses day‑to‑day —
+        not fragile setups held together with spreadsheets or guesswork.
       </p>
     </div>
   </div>
 </section>
 
-<section id="how" class="section light">
-  <h2>A simple, structured approach</h2>
+<!-- Approach -->
+<section id="approach" class="section">
+  <h2>Our approach is simple and structured</h2>
 
-  <ol class="steps">
-    <li>
-      <strong>Understand your business</strong><br />
-      We map how work flows — and where it breaks down.
-    </li>
+  <div class="flow">
+    <div class="flow-step">
+      <span></span>
+      <p>More responsive communication</p>
+    </div>
 
-    <li>
-      <strong>Design the right system</strong><br />
-      CRM and automation designed around your actual process.
-    </li>
+    <div class="flow-arrow">→</div>
 
-    <li>
-      <strong>Build and implement</strong><br />
-      Clean setup, tested properly, documented clearly.
-    </li>
+    <div class="flow-step">
+      <span></span>
+      <p>More opportunities followed up</p>
+    </div>
 
-    <li>
-      <strong>Support & evolve</strong><br />
-      Systems that grow with your business — not ones you outgrow.
-    </li>
-  </ol>
+    <div class="flow-arrow">→</div>
+
+    <div class="flow-step">
+      <span></span>
+      <p>Clearer ownership and reporting</p>
+    </div>
+
+    <div class="flow-arrow">→</div>
+
+    <div class="flow-step final">
+      <span></span>
+      <p>More predictable revenue</p>
+    </div>
+  </div>
 </section>
 
-<section class="section">
-  <h2>Most businesses don’t need more software</h2>
+<!-- Animated stats -->
+<section class="section section-alt">
+  <div class="stats">
+    <p class="stat active">
+      Businesses using CRM systems consistently report higher revenue growth
+      compared to those relying on manual tracking and spreadsheets.
+    </p>
 
-  <p class="large">
-    They need systems that don’t rely on memory, spreadsheets,
-    or constant micromanagement.
-  </p>
+    <p class="stat">
+      Faster response times and automated follow‑ups directly increase
+      conversions by ensuring no enquiry or lead is missed.
+    </p>
 
-  <p>
-    That’s what Indiqo Systems builds.
-  </p>
+    <p class="stat">
+      Consistent systems improve customer experience, leading to
+      stronger reviews, repeat business, and long‑term retention.
+    </p>
+  </div>
 </section>
 
-<section class="section light">
-  <h2>Who we work with</h2>
-
-  <ul class="list">
-    <li>Founder‑led and growing businesses</li>
-    <li>Teams juggling sales, delivery and admin</li>
-    <li>Businesses where “the system” lives in someone’s head</li>
-    <li>Owners who want clarity, not complexity</li>
-  </ul>
-</section>
-
-<section id="contact" class="section callout">
+<!-- Contact -->
+<section id="contact" class="section contact">
   <h2>Let your systems do more of the work</h2>
 
   <p>
-    Book a short, no‑pressure call to see whether Indiqo Systems is a good fit.
+    If you want clearer operations, faster responses, and systems your team
+    can actually rely on, we should talk.
   </p>
 
-  hello@indiqosolution.com
-    hello@indiqosolution.com
-  </a>
+  <p class="contact-link">
+    <a href="mailto:hello@indiqosolution.com">hello@indiqosolution.com</a>
+  </p>
 </section>
 
+<!-- Footer -->
 <footer class="footer">
-  assets/logo-q.svg
-
   <p>© Indiqo Systems. Clear systems. Better business.</p>
 </footer>
+
+<!-- Stats animation -->
+<script>
+  const stats = document.querySelectorAll('.stat');
+  let current = 0;
+
+  setInterval(() => {
+    stats[current].classList.remove('active');
+    current = (current + 1) % stats.length;
+    stats[current].classList.add('active');
+  }, 6000);
+</script>
 
 </body>
 </html>
