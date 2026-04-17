@@ -1,0 +1,108 @@
+:root {
+  --indigo: #1d2f4f;
+  --light: #f6f8fb;
+  --text: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.primary {
+  background: var(--indigo);
+  color: white;
+}
+
+.secondary {
+  border: 1px solid white;
+  color: white;
+}
+
+.hero {
+  padding: 6rem 3rem;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.section {
+  padding: 4rem 3rem;
+  max-width: 900px;
+}
+
+.section.light {
+  background: var(--light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.steps {
+  padding-left: 1.2rem;
+}
+
+.steps li {
+  margin-bottom: 1.2rem;
+}
+
+.list li {
+  margin-bottom: 0.6rem;
+}
+
+.large {
+  font-size: 1.2rem;
+}
+
+.callout {
+  background: var(--indigo);
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  padding: 2rem 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.logo-q {
+  height: 28px;
+  margin-bottom: 1rem;
+}

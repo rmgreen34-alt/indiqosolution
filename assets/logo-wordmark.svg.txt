@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 90">
+  <text x="0" y="65"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="72"
+        font-weight="700"
+        fill="#1d2f4f">
+    INDIQO
+  </text>
+</svg>
